@@ -1,0 +1,396 @@
+@font-face {
+  font-family: robotics-original;
+  src: url(nasalization-rg.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: robotics-original;
+}
+
+body {
+  background-image: url(background-image-for-whole-website.png);
+  font-size: 100%;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+}
+
+/* navbar starts here  */
+nav {
+  width: 100%;
+  z-index: 3;
+  display: grid;
+  position: fixed;
+  place-items: center;
+}
+
+.container {
+  width: 90%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+}
+
+/* navbar ends here */
+/* ----------------description starts here ------------------- */
+
+.discription {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15vw;
+}
+
+.discription_left {
+  /* background: black; */
+  /* height: 100vh; */
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.text-price,
+.ammount1 {
+  font-size: 1.3em;
+}
+.how-to-pay {
+  width: 100%;
+  margin: 10vh auto;
+  text-align: center;
+  font-size: 5vw;
+}
+.how-to-pay {
+  /* margin-top: 2vw; */
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image img {
+  width: 300px;
+  z-index: 2;
+}
+
+.img_stroke {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  border-radius: 10px;
+  translate: -20px 30px;
+  border: solid black;
+}
+
+.discription_right {
+  width: 55vw;
+}
+
+.heading,
+.heading1 {
+  font-size: 5.5vw;
+  width: 80%;
+}
+.heading1 {
+  font-size: 10vw;
+  width: 100%;
+  text-align: center;
+}
+
+.problem_statement,
+.problem_statement1 {
+  width: 80%;
+  font-size: 2vw;
+}
+.problem_statement1 {
+  font-size: 2.5vw;
+  width: 80%;
+}
+.problem_statement1,
+.heading1 {
+  display: none;
+}
+.information {
+  width: 80%;
+  /* height: 30vh; */
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 5vw;
+  background: radial-gradient(rgb(0, 0, 0, 0), #68676770, #686767b0);
+}
+
+.info_navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 3vh auto;
+}
+
+.details1 {
+  width: 100%;
+}
+
+.date,
+.last_date,
+.venue {
+  margin: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info_navigation-button {
+  color: white;
+  width: 150px;
+  background-color: #545454;
+  height: 30px;
+  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 5vw; */
+}
+/* .info_navigation-stroke{
+  /* kiya likhu es me kuch samaj he nehi aa raha 
+  stroke to bana dunga but fir us me border kaise dalunga mai  */
+.image_register_stroke {
+  width: 25vw;
+  margin-top: 5vw;
+  display: flex;
+  justify-content: left;
+  padding-left: 10px;
+  align-items: center;
+}
+.image_register_stroke img {
+  width: 20vw;
+  scale: 1.1;
+  position: absolute;
+}
+.register_text {
+  margin-left: 1%;
+  font-size: 2vw;
+}
+.how-to-pay {
+  font-size: 1.5em;
+  color: #898989;
+  margin: 3vh auto 3vh auto;
+}
+.price {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 3vh;
+}
+.text-price {
+  margin-right: 10px;
+}
+.fees {
+  margin: 2vw 0;
+}
+/* .text-price , .ammount , .prize_currency{
+  display:  ;
+} */
+.prize_currency {
+  margin-right: 10px;
+}
+.register {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 840px) {
+  .links {
+    display: none;
+  }
+
+  .discription {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .problem_statement,
+  .fees,
+  .heading {
+    display: none;
+  }
+  .discription_right {
+    font-size: 3vw;
+  }
+  .problem_statement1,
+  .heading1 {
+    display: unset;
+  }
+  .discription_right {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .discription_left {
+    width: 80%;
+  }
+  .image_register_stroke img {
+    width: 200px;
+    margin: auto;
+  }
+  .image_register_stroke {
+    margin-top: 50px;
+    width: 220px;
+  }
+  .register_text {
+    font-size: 20px;
+  }
+
+  .img_stroke {
+    translate: -10px 5px;
+  }
+  .image img,
+  .img_stroke {
+    width: 250px;
+    height: 250px;
+  }
+
+  .information {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/*---------------------------- footer starts here ------------------------ */
+.main {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5em;
+}
+.line {
+  width: 90vw;
+  height: 2px;
+  margin: 40px auto;
+  background-color: #000000;
+}
+
+footer {
+  background-color: #595757ad;
+  /* height: auto; */
+  /* margin-bottom: -10px; */
+  width: 100vw;
+}
+
+.flex {
+  justify-content: center;
+  flex-direction: row;
+  margin: 40px;
+}
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 660px) {
+  .footer-top {
+    justify-content: center;
+  }
+}
+
+.line {
+  width: 90%;
+  height: 2px;
+  margin: 20px auto;
+  background-color: #000000;
+}
+.comment-and-time {
+  display: flex;
+  flex: wrap;
+  width: 70vw;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photo {
+  text-align: center;
+}
+.photo p {
+  width: 200px;
+}
+
+.tym {
+  display: flex;
+  margin-bottom: 20px;
+}
+.comment-and-time {
+  width: 85vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+#vector {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+#tym p {
+  color: #000000;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+.contacts #in {
+  margin-left: 0;
+}
+
+/* .contacts #fa{
+       margin: 16px 17px 0 35px
+}
+.contacts #yu {
+    margin: 10px 20px;
+} */
+@media screen and (max-width: 370px) {
+  .comment-and-time {
+    justify-content: center;
+  }
+}
+.contacts {
+  min-width: 200px;
+  /* width: 500px; */
+}
+
+.social-media {
+  margin: auto 10px;
+}
+/* ----------------------------footer ends here ----------------------------- */
+
+
+/* fixed button */
+
+

@@ -1,0 +1,214 @@
+@font-face {
+  font-family: robotics-original;
+  src: url(../fonts/nasalization-rg.otf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: robotics-original;
+}
+
+/* applying background image to while page  */
+body {
+  background-image: url(./assets/static/background-image-for-whole-website.png);
+  /* background-repeat: no-repeat; */
+  /* width: 100vw; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  /* overflow: hidden; */
+}
+/* navbar starts here  */
+nav {
+  width: 100%;
+  z-index: 3;
+  display: grid;
+  position: fixed;
+  place-items: center;
+}
+
+.container {
+  width: 90%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: white;
+}
+/* .jointsec{
+    display: flex;
+} */
+
+.logo {
+  color: white;
+  width: 60px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-color: #333; */
+  padding: 10px;
+  color: white;
+  margin-right: 40px;
+
+  /* background: #911617; */
+}
+.linksToggle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+  /* background: #81ffff; */
+}
+
+.linksToggle {
+  display: none;
+  flex-direction: column;
+}
+
+.linksToggle a {
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  display: none;
+}
+
+.linksToggle.show {
+  display: flex;
+  opacity: 4;
+  height: 175px;
+
+  /* background-color: #650b0b; */
+}
+
+.toggle-btn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.bar {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  display: none;
+}
+
+/* media query */
+
+@media screen and (max-width: 900px) {
+  .bar {
+    display: inline;
+  }
+  .links {
+    display: none;
+  }
+  .contact-btn {
+    display: none;
+  }
+  .linksToggle {
+    position: absolute;
+    /* padding: ; */
+
+    height: 30vh;
+
+    margin-right: -80px;
+    /* width: %; */
+    /* background: linear-gradient(rgb(100, 128, 142), rgb(104, 122, 124)); */
+    mix-blend-mode: soft-light;
+  }
+
+  .linksToggle a {
+    display: block;
+  }
+  body {
+    /* background-image: url(./assets/static/background-image-for-whole-website.png); */
+    /* background-repeat: no-repeat; */
+    /* width: 100vw; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* overflow: hidden; */
+  }
+}
+
+/* navbar ends here */
+
+/* background image for whole website  */
+
+/* heading  */
+
+.heading {
+  text-align: center;
+  font-size: 400%;
+  color: #81ffff;
+  padding-top: 200px;
+}
+
+/* team members details  */
+.team-container {
+  display: grid;
+  place-items: center;
+}
+.secretary {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.memberpage {
+  width: 250px;
+  height: 450px;
+  margin: 80px;
+  background: #d9d9d9;
+}
+@media screen and (max-width: 850px) {
+  .memberpage {
+    margin: 40;
+  }
+}
+.memberpage-background {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  width: 100%;
+}
+
+.DP {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  position: relative;
+  margin-top: -150px;
+  border: solid 10px #d9d9d9;
+  left: 50px;
+}
+.post {
+  /* margin-top: 150px; */
+  font-size: 1.5em;
+  text-align: center;
+}
+.name {
+  font-size: 1.5em;
+  text-align: center;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 20px 50px;
+}
+.TE-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

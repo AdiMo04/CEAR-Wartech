@@ -1,0 +1,344 @@
+@font-face {
+  font-family: robotics-original;
+  src: url(../../../fonts/nasalization-rg.otf);
+}
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: robotics-original;
+}
+body {
+  background-image: url(../background-image-for-whole-website.png);
+  font-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  background-color: black;
+}
+/* navbar starts here  */
+nav {
+  width: 100%;
+  z-index: 3;
+  display: grid;
+  position: fixed;
+  place-items: center;
+}
+
+.container {
+  width: 90%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: white;
+}
+
+.logo img {
+  width: 60px;
+  color: white;
+  text-decoration: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+
+/* navbar ends here */
+
+.days {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  margin: auto;
+  height: 20vw;
+  color: white;
+  font-size: 2vw;
+}
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 20vw;
+  height: 4vw;
+  /* border: solid black 2px  ; */
+  border-radius: 40px;
+  background-color: #545454;
+  /* stroke:4px 4px black; */
+  transition: 0.2s;
+}
+.day:hover {
+  scale: 1.1;
+}
+.stoke {
+  width: 20vw;
+  height: 4vw;
+  position: absolute;
+  border: solid #81ffff 0.2vw;
+  border-radius: 40px;
+  color: #54545400;
+  margin-top: 0.6em;
+  margin-left: 1em;
+  /* transform: translate(40px 40px); */
+}
+.day1 {
+  padding: 20px 60px;
+  border: solid #81ffff 2px;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-color: transparent;
+  border-radius: 40px;
+}
+.leftday {
+  margin-left: 20px;
+}
+.rightday {
+  margin-right: 20px;
+}
+@media screen and (max-width: 908px) {
+  /* .days{
+        height: 2;
+    } */
+}
+
+/* date underline design starts here  */
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  margin-bottom: 10px;
+  color: #81ffff;
+  text-align: center;
+}
+.underline {
+  translate: 0 -20px;
+  display: flex;
+  justify-content: center;
+}
+.curve1 {
+  border: solid #81ffff 0.2vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 0 0 0 100%;
+}
+.line1 {
+  border: #81ffff;
+  border-bottom: solid 0.4vw;
+  width: 30vw;
+  color: #81ffff;
+}
+.curve2 {
+  border: solid #81ffff 0.2vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 0 0 100% 0%;
+}
+
+/* the line which devides the evensts */
+
+.day-devider-line {
+  position: absolute;
+  background-color: #81ffff;
+  width: 0.4vw;
+  translate: 0 -20px;
+  height: 1500px;
+  margin: 0 calc(50vw - 4px);
+}
+.linebottom {
+  margin-top: 1200px;
+  width: 500px;
+  translate: -47px 290px;
+}
+.linebottom-left {
+  display: inline-block;
+  width: 50px;
+  background-color: #81ffff;
+  height: 50px;
+  border-radius: 0 0 100% 0;
+  clip-path: polygon(0% 100%, 61% 59%, 100% 0, 100% 100%);
+}
+.description {
+  text-decoration: none;
+}
+.linebottom-right {
+  margin-left: -4px;
+  display: inline-block;
+  width: 50px;
+  background-color: #81ffff;
+  height: 50px;
+  border-radius: 0 0 0 100%;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 42% 60%);
+  /* clip-path:  */
+}
+
+/* the events section  */
+.event-container {
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 50.5% 50%;
+  grid-row-gap: 8vh;
+}
+
+.right-events {
+  width: 50%;
+}
+
+.left-events {
+  translate: 0 100px;
+  width: 50%;
+}
+
+.line-and-box-right {
+  display: flex;
+  justify-content: right;
+  width: calc(50vw - 2px);
+  align-items: center;
+}
+.line-and-box-left {
+  display: flex;
+  justify-content: left;
+  width: calc(50vw);
+  align-items: center;
+}
+.Schedule-container {
+  margin-bottom: 100px;
+}
+.schedule-page-right {
+  width: 20vw;
+  padding: 10px 20px;
+  height: 12vw;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding-right: 40px;
+  justify-content: right;
+  flex-wrap: wrap;
+  background: #545454;
+}
+.schedule-page-left {
+  width: 23vw;
+  padding: 10px 20px;
+  height: 12vw;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: right;
+  padding-left: 40px;
+  flex-wrap: wrap;
+  background: #545454;
+}
+.schedule-page-stroke-right {
+  position: absolute;
+  width: 20vw;
+  translate: -7% -104%;
+  padding: 10px 30px;
+  height: 12vw;
+  border: solid #81ffff 0.2vw;
+}
+.quoteright-top {
+  position: absolute;
+  width: 40px;
+  top: calc(-15% + -2.5vw);
+  font-size: 3vw;
+  left: 0;
+}
+.quoteright-bottom {
+  position: absolute;
+  bottom: calc(-15% + -2.5vw);
+  font-size: 3vw;
+  right: 0;
+}
+
+.schedule-page-stroke-left {
+  position: absolute;
+  width: 22vw;
+  translate: 5% -105%;
+  padding: 10px 30px;
+  height: 12vw;
+  border: solid #81ffff 0.2vw;
+}
+.venuer,
+.timer,
+.eventnamer {
+  width: 100%;
+  font-size: 1.5vw;
+
+  /* text-align:right; */
+}
+.eventnamer {
+  font-size: 2vw;
+}
+.venuel,
+.timel,
+.eventnamel {
+  width: 100%;
+  font-size: 1.5vw;
+  text-align: right;
+
+  /* text-align:right; */
+}
+.eventnamel {
+  font-size: 2vw;
+}
+.line {
+  /* width: calc(100% - 25vw); */
+  width: 0px;
+  height: 0.4vw;
+  transition: 1s;
+  background: #81ffff;
+}
+
+.length {
+  animation: length 1s ease-in-out;
+  width: 100px;
+}
+@keyframes length {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+.box {
+  /* translate: -200%; */
+  transition: 1s;
+}
+.shiftleft {
+  translate: -400%;
+}
+.shiftright {
+  translate: 400%;
+}
+.show {
+  translate: 0%;
+}
+
+/* making animation for every events  */
+/* .schedule-page-right , .schedule-page-stroke-right {
+    transition: 1s ease;
+    transform: translateX(-400%);
+}
+.schedule-page-left , .schedule-page-stroke-left{
+    transition: 1s ease;
+    transform: translateX(400%);
+} */
+@media screen and (max-width: 900px) {
+  .day-devider-line {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .left-events {
+    translate: 0 11vh;
+  }
+}
