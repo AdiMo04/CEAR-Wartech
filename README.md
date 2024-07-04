@@ -1,9 +1,10 @@
-# CEAR - Wartech
+# CEAR - Wartech (AY: 2023-24)
 
 ## Overview
 
 - **Event:** Wartech - An Event organised by the Center of Excellence for AI and Robotics Club
 - **Organizer:** Center of Excellence for AI and Robotics (CEAR)
+- **Secretaries:** Aditi More and Shubham Tiwari
 - **Participants:** Students from various colleges
 
 ## Features
