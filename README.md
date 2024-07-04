@@ -22,12 +22,12 @@
 
 - **Landing Page of the Website:**
 
-![Landing Page](Page1.png)
+![Landing Page](Pg-1.png)
 
 - **The Team Section:**
   
-![The Team Section](Page2.png)
+![The Team Section](Pg-2.png)
 
 - **Responsive Schedule Section:**
   
-![Schedule Section](Page3.png)
+![Schedule Section](Pg-3.png)
